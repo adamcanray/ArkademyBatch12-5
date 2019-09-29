@@ -21,4 +21,5 @@ cara menjalakan program:
 **pada fungsi ini parameter pertama berupa username dan kedua berupa password**
 <br/>
 coba ubahlah username dan password pada bagian ini, dan lihat bagaimana programnya bekerja.
-![Image of Yaktocat](capture/soal_2-1.JPG)
+<br/>
+![argument](capture/soal_2-1.JPG)
