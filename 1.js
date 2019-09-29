@@ -43,7 +43,28 @@ function biodata() {
 
     // return hasil
     return console.log(json_result);
+    // let target = document.getElementById("target");
+    // return target.innerHTML = result['name'];
 }// end method
 
-// jalankan function
+// jalakan method
 biodata();
+// let bio = biodata();
+
+// // start method
+// function print(){
+
+//     // alses data JSON
+//     let print = JSON.parse(bio);
+
+//     // var target
+//     var target = document.getElementById("target");
+
+//     // kembalikan nilai
+//     return target.innerHTML = print['name'];
+
+// }
+// // end method
+
+// // jalankan method
+// print();
