@@ -104,3 +104,14 @@ program ini akan mengeluarkan output pada console berupa **angka** yang ada pada
 program ini akan mengeluarkan output pada console berupa **pesan kesalahan** jika di dalam string yang kita input itu **tidak terdapat angka didalamnya.**
 
 ![soal-3 jalankan method](capture/soal_3-3.JPG)
+
+<br/>
+<br/>
+
+### soal 4(4.js)
+
+cara menjalakan program:
+* jalankan pada console di browser anda
+* atau salin code-nya lalu jalankan(run) diconsole pada website berikut: [es6console.com](https://es6console.com/)
+
+#### program ini bertugas ..
