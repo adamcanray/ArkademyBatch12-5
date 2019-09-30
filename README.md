@@ -137,3 +137,30 @@ ketika anda memasukan paramter yang bukan array(string, char, dll), contoh: **th
 ketika anda memasukan array yang panjangnya kurang dari 3, contoh: **thirdHighest([1,2]);** maka program akan menghasilkan ini pada console
 
 ![soal-4 default output console](capture/soal_4-4.JPG)
+
+<br/>
+<br/>
+
+### soal 5(5.js)
+
+cara menjalakan program:
+* jalankan pada console di browser anda
+* atau salin code-nya lalu jalankan(run) diconsole pada website berikut: [es6console.com](https://es6console.com/)
+
+#### program ini bertugas untuk mencari ada berapa character(parameter kedua) didalam sebuah string(parameter pertama)
+
+program ini default nya menjalankan fungsi **countChar("arkademy","a");** dengan mengirim 2 buah, parameter pertama berupa **string** dan parameter kedua berupa **char**
+
+![soal-4 jalankan method](capture/soal_5-1.JPG)
+
+<br/>
+
+program ini default nya akan mengeluarkan **"2"** pada console, angka 2 adalah banyak nya karakter yang ditemukan pada sebuah string. contoh: terdapat 2 karakter **"a"** pada string **"arkademy"**
+
+![soal-4 jalankan method](capture/soal_5-2.JPG)
+
+<br/>
+
+program ini akan mengeluarkan "Not Found!" pada console ketika tidak ada karakter **X** pada sebuah string. contoh: tidak terdapat karaker **"z"** pada string **"arkademy"**
+
+![soal-4 jalankan method](capture/soal_5-3.JPG)
