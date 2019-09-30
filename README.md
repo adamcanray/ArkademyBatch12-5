@@ -83,3 +83,24 @@ ketika **password** yang anda masukan itu tidak mengandung karakter spesial.
 
 ### soal 3(3.js)
 
+cara menjalakan program:
+* jalankan pada console di browser anda
+* atau salin code-nya lalu jalankan(run) diconsole pada website berikut: [es6console.com](https://es6console.com/)
+
+#### program ini bertugas untuk mencari angka pada sebuah string(jika ada angka maka akan mengeluarkan output berupa angka yang sudah diurutkan)
+
+program ini default nya menjalankan fungsi dengan mengirim sebuah parameter berupa string **"11adamcanray09"**
+
+![soal-3 jalankan method](capture/soal_3-1.JPG)
+
+<br/>
+
+program ini akan mengeluarkan output pada console berupa **angka** yang ada pada string dan juga **mengurutkan angka tersebut dari yang terkecil hingga angka terbesar.**
+
+![soal-3 jalankan method](capture/soal_3-2.JPG)
+
+<br/>
+
+program ini akan mengeluarkan output pada console berupa **pesan kesalahan** jika di dalam string yang kita input itu **tidak terdapat angka didalamnya.**
+
+![soal-3 jalankan method](capture/soal_3-3.JPG)
