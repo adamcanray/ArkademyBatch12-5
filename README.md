@@ -114,4 +114,26 @@ cara menjalakan program:
 * jalankan pada console di browser anda
 * atau salin code-nya lalu jalankan(run) diconsole pada website berikut: [es6console.com](https://es6console.com/)
 
-#### program ini bertugas ..
+#### program ini bertugas untuk menentukan bilangan terbesar ke-3(berupa angka) pada array
+
+program ini default nya menjalankan fungsi dengan mengirim sebuah parameter berupa array **[1,2,3,true,20,'string']**
+
+![soal-4 jalankan method](capture/soal_4-1.JPG)
+
+<br/>
+
+ketika dijalankan di console akan menampilkan angka "2", karena dari array **[1,2,3,true,20,'string']** yang terbesar ke-3 adalah angka "2", method akan mengabaikan tipe data lain selain **number**
+
+![soal-4 default output console](capture/soal_4-2.JPG)
+
+<br/>
+
+ketika anda memasukan paramter yang bukan array(string, char, dll), contoh: **thirdHighest('string');** maka program akan menghasilkan ini pada console
+
+![soal-4 not array](capture/soal_4-3.JPG)
+
+<br/>
+
+ketika anda memasukan array yang panjangnya kurang dari 3, contoh: **thirdHighest([1,2]);** maka program akan menghasilkan ini pada console
+
+![soal-4 default output console](capture/soal_4-4.JPG)
