@@ -16,27 +16,29 @@ function thirdHighest(array){
         if ( array.length < 3 ){
             // maka print "Minimal array length is 3!"
             result = 'Minimal array length is 3!';
+        } else{
+            // jika array yang dimasukan lebih atausama dengan 3        
+            // buat var array untuk menyimpan angka
+            let arrAngka = [];
+            // looping menurut panjang array
+            for ( var a = 0; a < array.length; a++ ){
+                // hilangkan tipe data lain, ambil hanya angka pada array
+                if ( typeof array[a] === 'number' ){
+                    arrAngka.push(array[a]);
+                }
+            }
+            // sort arrAngka menurut angka terbesar
+            arrAngka.sort(function(a,b){
+                return b-a;
+            });
+            // keluarkan array index ke-2 (ketiga terbesar)
+            result = arrAngka[2];
         }
     }
-    // array untuk menyimpan angka
-    let arrAngka = [];
-    // looping menurut panjang array
-    for ( var a = 0; a < array.length; a++ ){
-        // hilangkan tipe data lain, ambil hanya angka pada array
-        if ( typeof array[a] === 'number' ){
-            arrAngka.push(array[a]);
-        }
-    }
-    // sort arrAngka menurut angka terbesar
-    arrAngka.sort(function(a,b){
-        return b-a;
-    });
-    // keluarkan array index ke-2 (ketiga terbesar)
-    result = arrAngka[2];
-
+    
     // return result
     return console.log(result);
 }// end method
 
 // jalankan method
-thirdHighest(['adam', true, 10, 30, 'c', 50, 100]);
+thirdHighest([1,2,3,true,20,'string']);
