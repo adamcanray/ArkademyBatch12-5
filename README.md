@@ -34,8 +34,6 @@ cara menjalakan program:
 
 coba ubahlah **username** dan **password** pada bagian ini, dan lihat bagaimana programnya bekerja.
 
-<br/>
-
 ![argument](capture/soal_2-1.JPG)
 
 <br/>
