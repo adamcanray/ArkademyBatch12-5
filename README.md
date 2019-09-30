@@ -151,16 +151,16 @@ cara menjalakan program:
 
 program ini default nya menjalankan fungsi **countChar("arkademy","a");** dengan mengirim 2 buah, parameter pertama berupa **string** dan parameter kedua berupa **char**
 
-![soal-4 jalankan method](capture/soal_5-1.JPG)
+![soal-5 jalankan method](capture/soal_5-1.JPG)
 
 <br/>
 
 program ini default nya akan mengeluarkan **"2"** pada console, angka 2 adalah banyak nya karakter yang ditemukan pada sebuah string. contoh: terdapat 2 karakter **"a"** pada string **"arkademy"**
 
-![soal-4 jalankan method](capture/soal_5-2.JPG)
+![soal-5 output method](capture/soal_5-2.JPG)
 
 <br/>
 
 program ini akan mengeluarkan "Not Found!" pada console ketika tidak ada karakter **X** pada sebuah string. contoh: tidak terdapat karaker **"z"** pada string **"arkademy"**
 
-![soal-4 jalankan method](capture/soal_5-3.JPG)
+![soal-4 output method notfound](capture/soal_5-3.JPG)
