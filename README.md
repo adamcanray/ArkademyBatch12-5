@@ -32,7 +32,7 @@ ketika menjalakan program maka akan muncul **username** dan **password** anda pa
 
 <br/>
 
-### disetiap validasi akan mengeluarkan alert pada halaman website
+#### disetiap validasi akan mengeluarkan alert pada halaman website
 
 #### Username
 
@@ -77,3 +77,9 @@ ketika **password** yang anda masukan itu tidak mengandung huruf besar, huruf ke
 ketika **password** yang anda masukan itu tidak mengandung karakter spesial.
 
 ![pw karakter spesial](capture/soal_2-9.JPG)
+
+<br/>
+<br/>
+
+### soal 3(3.js)
+
