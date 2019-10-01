@@ -177,10 +177,10 @@ yang harus disiapkan:
 
 <br/>
 
-#### Cara menjalankan soal 6_a
+### Cara menjalankan soal 6_a
 
 Menggunakan **localhost/phpmyadmin/**:
-  * buat database baru(nama database bebas, saran: arkademy_batch_12_5)
+  * buat database baru(nama database bebas, saran: **arkademy_batch_12_5**)
   * langsung menuju menu **Import** klik tombol->**choose file/pilih file** lalu arahkan ke file
      **arkademy_tb_name_work_salary.sql** pada folder **soal-6/6_a/** lalu klik open, jika sudah klik 
      tombol->**Go** dibawah
