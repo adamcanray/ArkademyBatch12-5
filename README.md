@@ -187,7 +187,7 @@ Menggunakan **localhost/phpmyadmin/**:
   * selamat kamu sudah berhasil membuat database dan mengimport tabel beserta data dumb
   * sekarang pilih database tadi **arkademy_batch_12_5**
   * lalu ke menu **SQL** dan ketikan query berikut:
-    ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;```
+    ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;``` <--query ini terdapat pada file **soal-6/6_a/querySQL.txt**
   * sintaks diatas akan mengambil data dari field name di tabel name, field name di tabel work lalu diberi
      alias (as work, agar tampilan field nya tidak sama dengan field name pada tabel name) dan mengambil data
      dari field salary di tabel salary. ketiga tabel tersebut berelasi.
@@ -216,4 +216,5 @@ Menggunakan **command(cmd) pada windows**:
      contoh: ketik ```use arkademy_batch_12_5;``` pada command lalu enter, maka kamu akan berada pada database tersbut.
   * jika sudah masuk ke database tersebut maka tinggal kita tuliskan query SQL pada mysql command untuk menampilkan
       data yang ada dengan cara custom(hanya menampilkan apa yang ingin kita tampilkan).
-  * ketik lah sintaks berikut lalu enter ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;``` maka akan menampilkan data dari relasi/hubungan antara 3 buah tabel.
+  * ketik lah sintaks berikut lalu enter ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;``` <--query ini terdapat pada file **soal-6/6_a/querySQL.txt** 
+  * maka akan menampilkan data dari relasi/hubungan antara 3 buah tabel.
