@@ -1,32 +1,38 @@
+.logo-text{
+    font-size: 25px;
+    font-weight: 600;
+
+}
 .menu{
     box-shadow: 0px 5px 9px rgba(100,100,100,.3);
+    padding: 0;
 }
-.menu span{
-    font-weight: 500;
-}
-
 .btn-add{
+    width:190px;
     background-color: #f3ac13;
     box-shadow: 0px 2px 8px rgba(100,100,100,.3);
-    padding: 8px 40px;
+    padding: 15px 0px;
     color: #fff;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
+    border: 0;
     border-radius: 10px;
 }
-
 table{
-    width: 100%;
-    text-align: center;
-    font-size: 1.1em;
+    width:100%;
+    text-align: center
 }
-table th{
-    background-color: #f7f7fa;
+.tb-head{
+    background: #F7F7FA;
+    font-size: 25px;
 }
-
-.border-radius-self{
-    border-radius: 20px;
+.tb-head th{
+    padding: 20px 0px;
 }
-.form-input-self{
-    height: 50px;
+.tb-body{
+    font-size: 25px;
+    font-weight: 600;
+}
+.tb-body td{
+    padding: 20px 0px;
 }
