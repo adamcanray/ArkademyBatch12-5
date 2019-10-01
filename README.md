@@ -3,7 +3,7 @@
 
 <br/>
 
-### soal 1(1.js)
+### Soal 1(1.js)
 cara menjalakan program:
 * jalankan pada console di browser anda
 * atau salin code-nya lalu jalankan(run) diconsole pada website berikut: [es6console.com](https://es6console.com/)
@@ -13,7 +13,7 @@ Fungsi JSON pada REST API adalah sebagai tipe dari sebuah data yang diberikan/di
 <br/>
 <br/>
 
-### soal 2(2.js)
+### Soal 2(2.js)
 cara menjalakan program:
 * jalankan pada console di browser anda
 * atau salin code-nya lalu jalankan(run) diconsole pada website berikut: [es6console.com](https://es6console.com/)
@@ -81,7 +81,7 @@ ketika **password** yang anda masukan itu tidak mengandung karakter spesial.
 <br/>
 <br/>
 
-### soal 3(3.js)
+### Soal 3(3.js)
 
 cara menjalakan program:
 * jalankan pada console di browser anda
@@ -108,7 +108,7 @@ program ini akan mengeluarkan output pada console berupa **pesan kesalahan** jik
 <br/>
 <br/>
 
-### soal 4(4.js)
+### Soal 4(4.js)
 
 cara menjalakan program:
 * jalankan pada console di browser anda
@@ -141,7 +141,7 @@ ketika anda memasukan array yang panjangnya kurang dari 3, contoh: **thirdHighes
 <br/>
 <br/>
 
-### soal 5(5.js)
+### Soal 5(5.js)
 
 cara menjalakan program:
 * jalankan pada console di browser anda
@@ -164,3 +164,57 @@ program ini default nya akan mengeluarkan **"2"** pada console, angka 2 adalah b
 program ini akan mengeluarkan "Not Found!" pada console ketika tidak ada karakter **X** pada sebuah string. contoh: tidak terdapat karaker **"z"** pada string **"arkademy"**
 
 ![soal-4 output method notfound](capture/soal_5-3.JPG)
+
+<br/>
+<br/>
+
+### Soal 6(soal-6/)
+
+yang harus disiapkan:
+* Install Web Server(Xampp,Lamp,Mamp, dll) karena soal-6 membutuhkan web server dan database server.
+* disarankan menggunakan **Xampp**
+* clone/download repository **ArkademyBatch12-5** simpan di direktori Web Server, contoh: **xampp (C:/xampp/htdocs/)**
+
+<br/>
+
+#### Cara menjalankan soal 6_a
+
+* Menggunakan localhost/phpmyadmin/:
+  1. buat database baru(nama database bebas, saran: arkademy_batch_12_5)
+  2. langsung menuju menu **Import** klik tombol->**choose file/pilih file** lalu arahkan ke file
+     **arkademy_tb_name_work_salary.sql** pada folder **soal-6/6_a/** lalu klik open, jika sudah klik 
+     tombol->**Go** dibawah
+  3. selamat kamu sudah berhasil membuat database dan mengimport tabel beserta data dumb
+  4. sekarang pilih database tadi **arkademy_batch_12_5**
+  5. lalu ke menu **SQL** dan ketikan query berikut:
+    ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;```
+  6. sintaks diatas akan mengambil data dari field name di tabel name, field name di tabel work lalu diberi
+     alias (as work, agar tampilan field nya tidak sama dengan field name pada tabel name) dan mengambil data
+     dari field salary di tabel salary. ketiga tabel tersebut berelasi.
+  7. sintaks itu akan menampilkan sebuah tabel dengan field name, work dan salary.
+
+* Menggunakan command(cmd) pada windows:
+  1. buka command(cmd) pada windows
+  2. arahkan ke directori **C:\xampp\mysql\bin** dengan mengetik ```cd C:\xampp\mysql\bin```
+  3. lalu ketikan ```mysql -u root -p``` lalu enter. 
+  4. setelah itu akan diminta untuk memasukan password, **masukan password** kalian. jika ketika kalian install
+     xampp tidak men-set password maka **kosongkan** saja lalu enter.
+  5. jika sudah maka selamat kamu sudah masuk pada menu **database**
+
+  6. setelah itu buat lah database baru dengan perintah ```CREATE DATABASE arkademy_batch_12_5;``` lalu enter.
+  7. sekarang kita akan **Import tabel dan Dumping Data** karena kita sudah memiliki file **.sql**
+     caranya:
+     * pada command ketikan ```exit;``` agar kita keluar dari mysql command. atau buka command lagi lalu arah kan ke direktori **C:\xampp\mysql\bin** dengan mengetik ```cd C:\xampp\mysql\bin``` pada command.
+     * ketika kita sudah berada lagi pada direktori **C:\xampp\mysql\bin** kita tinggal import file ```.sql```-nya
+     * arahkan ke file **.sql** ini perintah nya ```mysql -u username -p < \folder\folder\file.sql``` 
+     * contoh: ketikan ```mysql -u root -p arkademy_batch_12_5 < D:\arkademyBatch12\batch-5\ArkademyBatch12-5\soal-6\6_a\arkademy_tb_name_work_salary.sql```
+     * masukan password kamu lalu enter(jika tidak set password kosongkan saja).
+     * selamat kita sudah berhasil mengisi database dengan Tabel dan Dumping Data.
+  8. masuk lagi ke mysql command, ketik ```mysql -u root -p``` lalu enter.
+  9. gunakan perintah ```show databases;``` lalu enter, untuk melihat database apa saja yang pernah kita buat
+  10. lalu pilih dengan mengetik nama database yang ingin kita gunakan diawali dengan ```use```, 
+     contoh: ketik ```use arkademy_batch_12_5;``` pada command lalu enter, maka kamu akan berada pada database tersbut.
+  11. jika sudah masuk ke database tersebut maka tinggal kita tuliskan query SQL pada mysql command untuk menampilkan
+      data yang ada dengan cara custom(hanya menampilkan apa yang ingin kita tampilkan).
+  12. ketik lah sintaks berikut lalu enter ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;```
+      maka akan menampilkan data dari relasi/hubungan antara 3 buah tabel.
