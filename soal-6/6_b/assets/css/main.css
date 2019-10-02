@@ -36,3 +36,18 @@ table{
 .tb-body td{
     padding: 20px 0px;
 }
+.no-border{
+    border: none;
+}
+.black-border{
+    border:solid #000 1px;
+}
+.placeholder{
+    /* color:#C9B6B6; */
+    font-weight: 600;
+    font-size:25px;
+}
+/* untuk input yang menggunakan placeholder */
+/* ::placeholder{
+    color:blue;
+} */

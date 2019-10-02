@@ -95,33 +95,46 @@
 </div><!-- end container -->
       
 <!-- Modal ADD -->
-<div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-    <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">ADD DATA</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="modal-header no-border">
+        <!-- <div class="row"> -->
+            <div class="col-md pl-4 pt-3" style="background:;">
+                <h5 class="modal-title" id="exampleModalCenterTitle">ADD DATA</h5>
+            </div>
+            <div class="col-md pr-2" style="background:;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                    <img src="assets/img/close_button.png" alt="close" width="20">
+                </button>
+            </div>
+        <!-- </div> -->
     </div>
-    <div class="modal-body">
+    <div class="modal-body p-5">
         <!-- input form -->
         <form>
-            <div class="form-group mt-3">
-                <input class="form-control form-control-lg" type="text" placeholder="Name ..">
+            <div class="form-group">
+                <input class="form-control form-control-lg black-border placeholder" type="text" placeholder="Name ..">
             </div>
             <div class="form-group mt-4">
-                <select class="form-control form-control-lg">
+                <select class="form-control form-control-lg black-border placeholder">
+                    <option>Work ...</option>
+                    <option>Work ...</option>
+                    <option>Work ...</option>
                     <option>Work ...</option>
                 </select>
             </div>
             <div class="form-group mt-4">
-                <select class="form-control form-control-lg">
+                <select class="form-control form-control-lg black-border placeholder">
+                    <option>Salary ...</option>
+                    <option>Salary ...</option>
+                    <option>Salary ...</option>
                     <option>Salary ...</option>
                 </select>
             </div>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer no-border">
         <button type="submit" class="btn-add">ADD</button>
         </form>
     </div>
