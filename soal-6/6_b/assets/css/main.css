@@ -36,6 +36,7 @@ table{
 .tb-body td{
     padding: 20px 0px;
 }
+/* add modal */
 .no-border{
     border: none;
 }
@@ -46,6 +47,39 @@ table{
     /* color:#C9B6B6; */
     font-weight: 600;
     font-size:25px;
+}
+.modal-title{
+    font-weight: 600;
+    font-size:25px;
+}
+.modal-body-padding{
+    padding: 40px 100px 20px;
+}
+.modal-radius{
+    border-radius:20px;
+    /* background: blue; */
+}
+#sel1, #sel2{
+    background:transparent;
+    /* z-index: 100; */
+    position: relative;
+}
+.select-side{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/downwards-arrow-key.png");
+    background-size:cover;
+    position: absolute;
+    right: 110px;
+    margin-top: 5px;
+    /* z-index: ; */
+    /* top:150px; */
+    /* display: inline-block; */
+}
+.appearance-none{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 /* untuk input yang menggunakan placeholder */
 /* ::placeholder{
