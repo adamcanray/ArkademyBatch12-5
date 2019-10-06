@@ -1,1 +1,16 @@
 SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;
+
+INSERT
+-------
+INSERT INTO salary VALUES ('','Rp.8.000.000');
+SET @last_salary_id = LAST_INSERT_ID();
+INSERT INTO work VALUES ('','Database Dev',@last_salary_id);
+SET @last_work_id = LAST_INSERT_ID();
+INSERT INTO name VALUES ('', 'canray', @last_work_id, @last_salary_id);
+
+INSERT DI PHP, BISA
+$query1 = "INSERT INTO salary VALUES ('','$salary')";
+$query2 = "SELECT LAST_INSERT_ID() INTO @salary_id";
+$query3 = "INSERT INTO work VALUES ('','$work', @salary_id)";
+$query4 = "SELECT LAST_INSERT_ID() INTO @work_id";
+$query5 = "INSERT INTO name VALUES ('','$name', @work_id, @salary_id)";
