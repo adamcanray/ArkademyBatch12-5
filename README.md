@@ -218,3 +218,14 @@ Menggunakan **command(cmd) pada windows**:
       data yang ada dengan cara custom(hanya menampilkan apa yang ingin kita tampilkan).
   * ketik lah sintaks berikut lalu enter ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;``` <--query ini terdapat pada file **soal-6/6_a/querySQL.txt** 
   * maka akan menampilkan data dari relasi/hubungan antara 3 buah tabel.
+
+<br/>
+
+### Cara menjalankan soal 6_a
+
+Untuk menjalankan soal 6_a ini cukup mudah, yaitu:
+* jalankan file ```index.html``` pada folder ```soal-6/6_b/index.html``` pada web browser anda masing-masing(contoh: chrome).
+
+<br/>
+
+> note: cukup mudah menjalankan-nya, karena memang hanya tampilan static dari html saja.
