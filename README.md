@@ -221,9 +221,9 @@ Menggunakan **command(cmd) pada windows**:
 
 <br/>
 
-### Cara menjalankan soal 6_a
+### Cara menjalankan soal 6_b
 
-Untuk menjalankan soal 6_a ini cukup mudah, yaitu:
+Untuk menjalankan soal 6_b ini cukup mudah, yaitu:
 * jalankan file ```index.html``` pada folder ```soal-6/6_b/index.html``` pada web browser anda masing-masing(contoh: chrome).
 
 <br/>
