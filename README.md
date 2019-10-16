@@ -234,7 +234,7 @@ Untuk menjalankan soal 6_b ini cukup mudah, yaitu:
 
 <br/>
 
-## Cara menjalankan soal 6_c
+### Cara menjalankan soal 6_c
 
 Untuk menjalankan soal 6_c ini cukup mudah, syaratnya adalah kamu sudah **berhasil** mengikuti **Cara menjalankan soal 6_a**, karena dengan begitu kamu sudah memiliki nama database berserta tabel yang sesuai dengan sintaks atapun query yang saya buat pada file **.php** di folder **soal-6/6_c**.
 
