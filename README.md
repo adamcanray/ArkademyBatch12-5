@@ -253,4 +253,4 @@ Untuk menjalankan soal 6_c ini cukup mudah, syaratnya adalah kamu sudah **berhas
 
 <br/>
 
->Keyeennn.
+>Selesai.
