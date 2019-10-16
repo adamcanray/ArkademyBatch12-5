@@ -6,14 +6,14 @@ require 'functions.php';
 //danmenyimpannya ke dalam variable $id
 $id = $_GET["id"];
 // tangkap name
-$name = $_GET["name"];
+// $name = $_GET["name"];
 
-if ( hapus($id) > 0) {
+if (hapus($id) > 0) {
 	//menampilkan alert jika berhasil
 	echo "
 		<script>
-			// alert('data berhasil dihapus!');
-			document.location.href = 'index.php?showmdd=1&name=$name';
+			alert('data berhasil dihapus!');
+			document.location.href = 'index.php';
 			// redirect ke index.php
 		</script>
 		";
@@ -21,8 +21,8 @@ if ( hapus($id) > 0) {
 	//menampilkanalert jika berhasil
 	echo "
 		<script>
-			// alert('data gagal dihapus!');
-			document.location.href = 'index.php?showmdd=0';
+			alert('data gagal dihapus!');
+			document.location.href = 'index.php?';
 			//redirect ke index.php
 		</script>
 		";
