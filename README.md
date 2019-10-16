@@ -179,29 +179,33 @@ yang harus disiapkan:
 
 ### Cara menjalankan soal 6_a
 
-Menggunakan **localhost/phpmyadmin/**:
-  * buat database baru(nama database bebas, saran: **arkademy_batch_12_5**)
-  * langsung menuju menu **Import** klik tombol->**choose file/pilih file** lalu arahkan ke file
+Ada dua cara, yakni:
+
+<br/>
+
+1. Cara Pertama, menggunakan **localhost/phpmyadmin/**:
+   * buat database baru(nama database bebas, saran: **arkademy_batch_12_5**)
+   * langsung menuju menu **Import** klik tombol->**choose file/pilih file** lalu arahkan ke file
      **DB_arkademy_batch_12_5_TB_name_work_salary.sql** pada folder **soal-6/6_a/** lalu klik open, jika sudah klik 
      tombol->**Go** dibawah
-  * selamat kamu sudah berhasil membuat database dan mengimport tabel beserta data dumb.
-  * sekarang pilih database tadi **arkademy_batch_12_5**
-  * lalu ke menu **SQL** dan ketikan query berikut:
+   * selamat kamu sudah berhasil membuat database dan mengimport tabel beserta data dumb.
+   * sekarang pilih database tadi **arkademy_batch_12_5**
+   * lalu ke menu **SQL** dan ketikan query berikut:
     ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;``` <--query ini terdapat pada file **soal-6/6_a/querySQL.txt**
-  * sintaks diatas akan mengambil data dari field name di tabel name, field name di tabel work lalu diberi
+   * sintaks diatas akan mengambil data dari field name di tabel name, field name di tabel work lalu diberi
      alias (as work, agar tampilan field nya tidak sama dengan field name pada tabel name) dan mengambil data
      dari field salary di tabel salary. ketiga tabel tersebut berelasi.
-  * sintaks itu akan menampilkan sebuah tabel dengan field name, work dan salary.
+   * sintaks itu akan menampilkan sebuah tabel dengan field name, work dan salary.
 
-Menggunakan **command(cmd) pada windows**:
-  * buka command(cmd) pada windows
-  * arahkan ke directori **C:\xampp\mysql\bin** dengan mengetik ```cd C:\xampp\mysql\bin```
-  * lalu ketikan ```mysql -u root -p``` lalu enter. 
-  * setelah itu akan diminta untuk memasukan password, **masukan password** kalian. jika ketika kalian install
+2. Cara Kedua, menggunakan **command(cmd) pada windows**:
+   * buka command(cmd) pada windows
+   * arahkan ke directori **C:\xampp\mysql\bin** dengan mengetik ```cd C:\xampp\mysql\bin```
+   * lalu ketikan ```mysql -u root -p``` lalu enter. 
+   * setelah itu akan diminta untuk memasukan password, **masukan password** kalian. jika ketika kalian install
      xampp tidak men-setting password maka **kosongkan** saja lalu enter.
-  * jika sudah maka selamat kamu sudah masuk pada menu **database**
-  * setelah itu buat lah database baru dengan perintah ```CREATE DATABASE arkademy_batch_12_5;``` lalu enter.
-  * sekarang kita akan **Import tabel dan Dumping Data** karena kita sudah memiliki file **.sql**
+   * jika sudah maka selamat kamu sudah masuk pada menu **database**
+   * setelah itu buat lah database baru dengan perintah ```CREATE DATABASE arkademy_batch_12_5;``` lalu enter.
+   * sekarang kita akan **Import tabel dan Dumping Data** karena kita sudah memiliki file **.sql**
      caranya:
      * pada command ketikan ```exit;``` agar kita keluar dari mysql command. atau buka command lagi lalu arah kan ke direktori **C:\xampp\mysql\bin** dengan mengetik ```cd C:\xampp\mysql\bin``` pada command.
      * ketika kita sudah berada lagi pada direktori **C:\xampp\mysql\bin** kita tinggal import file ```.sql```-nya
@@ -209,14 +213,14 @@ Menggunakan **command(cmd) pada windows**:
      * contoh: ketikan ```mysql -u root -p arkademy_batch_12_5 < D:\arkademyBatch12\batch-5\ArkademyBatch12-5\soal-6\6_a\DB_arkademy_batch_12_5_TB_name_work_salary.sql```
      * masukan password kamu lalu enter(jika tidak setting password kosongkan saja).
      * selamat kita sudah berhasil mengisi database dengan Tabel dan Dumping Data.
-  * masuk lagi ke mysql command, ketik ```mysql -u root -p``` lalu enter.
-  * gunakan perintah ```show databases;``` lalu enter, untuk melihat database apa saja yang pernah kita buat
-  * lalu pilih dengan mengetik nama database yang ingin kita gunakan diawali dengan ```use```, 
+   * masuk lagi ke mysql command, ketik ```mysql -u root -p``` lalu enter.
+   * gunakan perintah ```show databases;``` lalu enter, untuk melihat database apa saja yang pernah kita buat
+   * lalu pilih dengan mengetik nama database yang ingin kita gunakan diawali dengan ```use```, 
      contoh: ketik ```use arkademy_batch_12_5;``` pada command lalu enter, maka kamu akan berada pada database tersebut.
-  * jika sudah masuk ke database tersebut maka tinggal kita tuliskan query SQL pada mysql command untuk menampilkan
+   * jika sudah masuk ke database tersebut maka tinggal kita tuliskan query SQL pada mysql command untuk menampilkan
       data yang ada dengan cara custom(hanya menampilkan apa yang ingin kita tampilkan).
-  * ketik lah sintaks berikut lalu enter ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;``` <--query ini terdapat pada file **soal-6/6_a/querySQL.txt** 
-  * maka akan menampilkan data dari relasi/hubungan antara 3 buah tabel.
+   * ketik lah sintaks berikut lalu enter ```SELECT name.name, work.name as work, salary FROM name INNER JOIN work ON name.id_work = work.id INNER JOIN salary ON name.id_salary = salary.id;``` <--query ini terdapat pada file **soal-6/6_a/querySQL.txt** 
+   * maka akan menampilkan data dari relasi/hubungan antara 3 buah tabel.
 
 <br/>
 
