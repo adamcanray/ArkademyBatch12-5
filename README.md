@@ -170,7 +170,7 @@ program ini akan mengeluarkan "Not Found!" pada console ketika tidak ada karakte
 
 ### Soal 6(soal-6/)
 
-yang harus disiapkan:
+yang harus disiapkan untuk menjalankan soal 6:
 * Install Web Server(Xampp,Lamp,Mamp, dll) karena soal-6 membutuhkan web server dan database server.
 * disarankan menggunakan **Xampp**
 * clone/download repository **ArkademyBatch12-5** simpan di direktori Web Server, contoh: **xampp (C:/xampp/htdocs/)**
@@ -179,7 +179,9 @@ yang harus disiapkan:
 
 ### Cara menjalankan soal 6_a
 
-Ada dua cara, yakni:
+>Sebelum mengikuti cara dibawah ini, terlebih dahulu kamu harus menjalankan aplikasi XAMPP(atau yang sejenis) yang sudah diinstall, lalu jalankan Apache(sebagai Web Server) dan MySQL(sebagai Database Server).
+
+Ada dua cara menjalankan soal 6_a, yakni:
 1. Cara Pertama, menggunakan **localhost/phpmyadmin/**:
    * buat database baru(nama database bebas, saran: **arkademy_batch_12_5**)
    * langsung menuju menu **Import** klik tombol->**choose file/pilih file** lalu arahkan ke file
@@ -229,3 +231,26 @@ Untuk menjalankan soal 6_b ini cukup mudah, yaitu:
 <br/>
 
 > note: cukup mudah menjalankan-nya, karena memang hanya tampilan static dari html saja.
+
+<br/>
+
+## Cara menjalankan soal 6_c
+
+Untuk menjalankan soal 6_c ini cukup mudah, syaratnya adalah kamu sudah **berhasil** mengikuti **Cara menjalankan soal 6_a**, karena dengan begitu kamu sudah memiliki nama database berserta tabel yang sesuai dengan sintaks atapun query yang saya buat pada file **.php** di folder **soal-6/6_c**.
+
+>Sebelum mengikuti cara dibawah ini, terlebih dahulu kamu harus menjalankan aplikasi XAMPP(atau yang sejenis) yang sudah diinstall, lalu jalankan Apache(sebagai Web Server) dan MYSQL(sebagai Database Server).
+
+* cara menjalankan program:
+  1. Pertama, kamu bisa simpan folder **soal-6/6_a** ini pada direktory XAMPP(contoh: **C:\xampp\htdocs\ArkademyBatch12-5\soal-6\6_a**).
+  2. **sangat disarankan menyimpan folder seperti pada point nomor-1**
+  3. lalu jalankan aplikasi XAMPP, start pada bagian **Apache** dan **MySQL**
+  4. lalu kamu buka browser(contoh: chrome)
+  5. lalu ketikan ```localhost\ArkademyBatch12-5\soal-6\6_a\index.php``` pada url, dan kamu sudah berhasil menjalankan soal 6_c. **SELAMAT**.
+* cara membuka database:
+  1. ada pada cara Pertama di bagian **cara menjalankan soal 6_a**
+  2. atau ketikan saja pada url ```localhost\phpmyadmin```
+  3. lalu pilih/klik database kalian, misal: **arkademy_batch_12_5**.
+
+<br/>
+
+>Keren.
