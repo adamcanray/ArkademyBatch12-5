@@ -180,9 +180,6 @@ yang harus disiapkan:
 ### Cara menjalankan soal 6_a
 
 Ada dua cara, yakni:
-
-<br/>
-
 1. Cara Pertama, menggunakan **localhost/phpmyadmin/**:
    * buat database baru(nama database bebas, saran: **arkademy_batch_12_5**)
    * langsung menuju menu **Import** klik tombol->**choose file/pilih file** lalu arahkan ke file
